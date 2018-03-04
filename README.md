@@ -1,6 +1,7 @@
 ### MongoDB - Configure a 3 Nodes ReplicaSet to support TLS/SSL
 
 #### Create the Root Certificate
+NOTE: Commands to be change accordingly based on the application you are using to generate certificate. In this particular example we are using openssl application.
 The Root Certificate (aka CA File) will be used to sign and identify your certificate. To generate it, run the command below.
 
     $ openssl req -nodes -out ca.pem -new -x509 -keyout ca.key
